@@ -8,19 +8,19 @@
 
     <ImageView
         android:id="@+id/iv_icon"
-        app:srcCompat="@drawable/ic_advanced_tools"
-        android:layout_marginBottom="5dp"
         android:layout_width="@dimen/icon_main_width"
-        android:layout_height="@dimen/icon_main_height" />
+        android:layout_height="@dimen/icon_main_height"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/ic_advanced_tools" />
 
     <TextView
         android:id="@+id/tv_name"
-        android:text="@string/advanced_tools"
-        android:textColor="@android:color/white"
-        android:textSize="12sp"
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/advanced_tools"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
 
 </LinearLayout>
