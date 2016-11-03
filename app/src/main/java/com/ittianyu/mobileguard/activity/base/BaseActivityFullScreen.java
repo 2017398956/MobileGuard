@@ -4,9 +4,7 @@ import com.ittianyu.mobileguard.utils.WindowsUtils;
 
 /**
  * Created by yu.
- * base template activity full screen
- * if extend this activity, it will call initView initData initEvent in order when onCreate。
- * And the child activity no need to override onCreate. Just call setContentView at initView.
+ * base template activity full screen.
  */
 public abstract class BaseActivityFullScreen extends BaseActivity {
 

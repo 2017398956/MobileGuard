@@ -6,10 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 
 
 /**
- * Created by yu.
- * base template activity
- * if extend this activity, it will call initView initData initEvent in order when onCreate。
- * And the child activity no need to override onCreate. Just call setContentView at initView.
+ * Created by yu and modified by nfl.
+ * Base template activity
+ * if extend this activity, it will call {@link #initView} {@link #initData} {@link #initEvent} in order
+ * when {@link #onCreate(Bundle)}.
+ * And the child activity no need to override {@link #onCreate(Bundle)} .
+ * Just call {@link #setContentView(int)} at {@link #initView}.
  */
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -17,12 +19,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         init();
-
     }
 
     /**
-     * init
-     * will call initView initData  initEvent in order
+     * Will call {@link #initView} {@link #initData} {@link #initEvent} in order
      * If you want to change the order, you can override it in your class.
      */
     protected void init() {
@@ -32,17 +32,18 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     /**
-     * init all view
+     * You can use {@link #findViewById(int)} there .
+     * This method called before {@link #initData()}
      */
     protected abstract void initView();
 
     /**
-     * init data
+     * This method called {after {@link #initView()} and before @link #initEvent()}  .
      */
     protected abstract void initData();
 
     /**
-     * init event
+     * This method called after {@link #initData()}
      */
     protected abstract void initEvent();
 
