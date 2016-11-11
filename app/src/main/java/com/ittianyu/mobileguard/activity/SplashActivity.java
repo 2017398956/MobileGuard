@@ -78,7 +78,6 @@ public class SplashActivity extends BaseActivityFullScreen {
         // get auto update cinfig
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         autoUpdate = sp.getBoolean(Constant.KEY_CB_AUTO_UPDATE, true);
-//        System.out.println("autoUpdate:" + autoUpdate);
     }
 
     /**

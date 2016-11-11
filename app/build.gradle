@@ -30,7 +30,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.android.support:support-v4:25.0.0'
     compile 'com.android.support:support-vector-drawable:25.0.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta3'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.github.k0shk0sh:PermissionHelper:1.1.0'

@@ -9,30 +9,28 @@
         android:id="@+id/textView"
         android:layout_width="165dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginLeft="88dp"
-        android:layout_marginStart="88dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="24sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22000003"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="96dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="139dp"
         android:layout_height="79dp"
-        android:layout_marginBottom="424dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintRight_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginLeft="24dp" />
 
 </android.support.constraint.ConstraintLayout>
