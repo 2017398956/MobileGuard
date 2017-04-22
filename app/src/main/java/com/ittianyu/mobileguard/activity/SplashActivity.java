@@ -88,10 +88,8 @@ public class SplashActivity extends BaseActivityFullScreen {
         setContentView(R.layout.activity_splash);
         // set animation
         setAnimation();
-        // get local version
-//        getAppVersionInfo();// now replace by the word on image
         // auto update check
-        if(autoUpdate) {
+        if (autoUpdate) {
             // get latest version info
             getVersionInfo();
         }// if not update, it will start main activity on animation end
@@ -312,14 +310,6 @@ public class SplashActivity extends BaseActivityFullScreen {
     }
 
     /**
-     * get the version info in gradle and set to TextView
-     */
-    private void getAppVersionInfo() {
-//        TextView tvVersionName = (TextView) findViewById(R.id.tv_splash_version_name);
-//        tvVersionName.setText(BuildConfig.VERSION_NAME);
-    }
-
-    /**
      * get latest version info
      * the result will show at least ANIMATION_DURATION millisecond.
      * It means that the result will be show until animation finish
@@ -423,16 +413,17 @@ public class SplashActivity extends BaseActivityFullScreen {
 
         // set animation listener
         // when animation finish, start main activity if autoUpdate equal false
-        if(!autoUpdate) {
+        if (!autoUpdate) {
             animationSet.setAnimationListener(new Animation.AnimationListener() {
                 @Override
                 public void onAnimationStart(Animation animation) {
                 }
+
                 @Override
                 public void onAnimationEnd(Animation animation) {
                     System.out.println("onAnimationEnd:startMainActivity");
                     // wait for LOGO_SHOW_TIME then start main activity
-                    new Thread(){
+                    new Thread() {
                         @Override
                         public void run() {
                             SystemClock.sleep(LOGO_SHOW_TIME);
@@ -445,6 +436,7 @@ public class SplashActivity extends BaseActivityFullScreen {
                         }
                     }.start();
                 }
+
                 @Override
                 public void onAnimationRepeat(Animation animation) {
                 }
